@@ -24,6 +24,10 @@
   color: white;
 }
 
+.vzw-100 {
+  width: 150%;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +39,113 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.linkTwo {
+  font-family: "Arial", sans-serif;
+  color: black;
+  transition: color 0.3s ease;
+  max-width: 150px;
+  max-height: 100px;
+}
+
+.linkTwo:hover {
+  color: blue;
+  animation: wiggle 0.5s infinite alternate;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(2px);
+  }
+}
+
+.linkTwo:active {
+  animation: jump 0.3s;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.ftContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #dbf3ff !important;
+}
+
+.no-wrap {
+  white-space: nowrap;
+  text-decoration: none !important;
+}
+
+.form-label {
+  margin-right: 5px;
+}
+
+.navbar {
+  margin-top: -10px !important;
+  box-sizing: border-box;
+  min-width: 100%;
+}
+
+.navbar-expand {
+  flex-flow: row nowrap;
+}
+
+.navbar-expand .navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.light-bg {
+  background-color: #feffd7 !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.rounded-bg {
+  border-radius: 5px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 20px;
+  height: 295px !important;
+}
+
+.pcc {
+  place-content: center;
+}
+
+.form {
+  background-color: #beffce;
+  border-radius: 1rem;
+  color: #000000;
+  padding: 2%;
 }
