@@ -27,7 +27,7 @@ function SignUp() {
 
   return (
     <React.Fragment>
-      <div class="pcc text-center">
+      <div className="pcc text-center">
         <h1 className="">Sign Up</h1>
         <Link to="/login" className="">
           Already have an account?

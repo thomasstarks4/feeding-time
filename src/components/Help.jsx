@@ -8,17 +8,19 @@ function Help() {
         <div>Q1: How do I add a new feeding entry for my baby?</div>{" "}
         <div>
           A1: To add a new feeding entry in FeedingTime, simply navigate to the
-          "Add Feeding" section in the app and fill out the required information
-          such as the date, time, duration, and type of feeding. Click on the
-          "Save" button to record the feeding entry.{" "}
+          "FeedingTime Tracker" section from the navigation bar and fill out the
+          required information such as the ounces fed, time, duration, and type
+          of feeding. Click on the "Calculate" button to figure out how many
+          calories your baby just ate!{" "}
         </div>
         <div>
-          Q2: Can I track both breastfeeding and bottle feeding in FeedingTime?
+          Q2: Can I track both breastfeeding and bottle feeding with
+          FeedingTime?
         </div>
         <div>
           A2: Yes, FeedingTime allows you to track various types of feedings
           including breastfeeding, bottle feeding, and even the introduction of
-          solid foods. When adding a new feeding entry, you can specify the type
+          baby food! When adding a new feeding entry, you can specify the type
           of feeding to accurately record your baby's feeding habits.{" "}
         </div>
         <div>Q3: Is it possible to set reminders for feeding times?</div>{" "}

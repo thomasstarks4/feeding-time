@@ -2,7 +2,7 @@ import * as Yup from "yup";
 const signUpSchema = Yup.object().shape({
   username: Yup.string()
     .min(2, "Your Username must be at least 2 characters.")
-    .max(25, "Your Username cannot be longer than 255 characters.")
+    .max(25, "Your Username cannot be longer than 25 characters.")
     .required("A Username is required."),
   displayName: Yup.string()
     .min(1, "Please enter a Display Name.")

@@ -52,7 +52,7 @@ function SignUp() {
                     className="form-control"
                     id="username1"
                     name="username"
-                    placeholder="Ex: johnsmith123"
+                    placeholder="Please enter your username."
                   />
                 </div>
                 <div className="form-group p-1">
@@ -64,7 +64,7 @@ function SignUp() {
                     className="form-control"
                     id="password1"
                     name="password"
-                    placeholder="Please enter a password."
+                    placeholder="Please enter your password."
                   />
                 </div>
                 <div className="d-flex pcc">
