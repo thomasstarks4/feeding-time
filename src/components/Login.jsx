@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Formik, Form, Field } from "formik";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import signUpSchema from "../schemas/signUpSchema";
 import { Link } from "react-router-dom";
 
@@ -22,6 +24,7 @@ function SignUp() {
       childcareStatus: values.childcareStatus,
       visitSource: values.visitSource,
     };
+    toast.success("This is just for demo purposes for now :)");
     console.log("INITIAL VALUES HERE --------", signUpFormData);
     console.log("PAYLOAD HERE--------", payload, formik);
   };
@@ -80,6 +83,7 @@ function SignUp() {
             </Formik>
           </div>
         </div>
+        <ToastContainer />
       </div>
     </React.Fragment>
   );

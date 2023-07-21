@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 function Footer() {
   return (
-    <div className="card light-bg footer">
+    <div className="light-bg footer">
       <div className="card-header">
         {" "}
-        &copy; {new Date().getFullYear()} FeedingTime™. All rights reserved.{" "}
+        {new Date().getFullYear()} FeedingTime.{" "}
       </div>
       <div className="card-body">
         <h5 className="card-title">FeedingTime</h5>

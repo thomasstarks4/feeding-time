@@ -8,7 +8,7 @@ function Home() {
       <div className="d-flex flex-column align-items-center">
         <div className="d-block">
           <img
-            className="pt-3 pb-3"
+            className="pt-3 pb-3 ft-gif"
             src={feedingTimeGif}
             alt="Feeding Time Animation"
           />
