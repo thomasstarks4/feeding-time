@@ -20,7 +20,8 @@ function Navbar() {
         <Link className="linkTwo nav-link mx-4" to="/login">
           <p className="fs-5">Login</p>
         </Link>
-        <Link className="linkTwo nav-link mx-4" to="/profile">
+        {/*Must be rerouted to /profile once login and auth are finished in .NET */}
+        <Link className="linkTwo nav-link mx-4" to="/loginerror">
           <p className="fs-5 no-wrap">My Profile</p>
         </Link>
         <Link className="linkTwo nav-link mx-4" to="/blogs">

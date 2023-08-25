@@ -1,17 +1,13 @@
 import axios from "axios";
-import {
-  API_HOST_PREFIX,
-  onGlobalError,
-  onGlobalSuccess,
-} from "./serviceHelpers";
+import { onGlobalError, onGlobalSuccess } from "./serviceHelper";
 const endpoint = {
-  signUpUrl: `${API_HOST_PREFIX}/api/signup`,
+  url: "http://localhost:50001/api/users",
 };
 
-const signUp = (payload) => {
+const addUser = (payload) => {
   const config = {
     method: "POST",
-    url: endpoint.signUpUrl,
+    url: endpoint.url,
     data: payload,
     withCredentials: true,
     crossdomain: true,
@@ -20,4 +16,4 @@ const signUp = (payload) => {
   return axios(config).then(onGlobalSuccess).catch(onGlobalError);
 };
 
-export default signUp;
+export default addUser;

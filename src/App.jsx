@@ -13,6 +13,7 @@ import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
 import Tracker from "./components/Tracker";
 import SignUp from "./components/SignUp";
+import LoginError from "./components/LoginError";
 
 function App() {
   return (
@@ -28,9 +29,12 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/tracker" element={<Tracker />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
+        <Route path="/loginerror" element={<LoginError />}></Route>
       </Routes>
 
-      <Footer className="footer" />
+      <div class="d-none">
+        <Footer className="footer" />
+      </div>
     </React.Fragment>
   );
 }

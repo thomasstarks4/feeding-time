@@ -22,14 +22,14 @@
   pointer-events: none;
 }
 
+body {
+  background-color: #dbf3ff !important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.vzw-100 {
-  width: 150%;
 }
 
 @keyframes App-logo-spin {
@@ -79,14 +79,34 @@
   }
 }
 
+.card {
+  border-radius: 3px solid red !important;
+}
+
 .ftContainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-body {
-  background-color: #dbf3ff !important;
+.ft-gif {
+  border-radius: 20% 20% 20% 20% !important;
+  margin: 2% 2%;
+  border: solid 9px #dfe372;
+}
+
+.ft-header-gold {
+  background-color: #dfe372;
+  border-radius: 1rem;
+  border: 6px groove rgb(135, 105, 69);
+  color: #000000;
+  display: inline-block;
+  padding: 0.5%;
+  text-align: center;
+}
+
+.form-label {
+  margin-right: 5px;
 }
 
 .no-wrap {
@@ -94,15 +114,38 @@ body {
   text-decoration: none !important;
 }
 
-.form-label {
-  margin-right: 5px;
+.info-card-holder {
+  display: flex;
+  justify-content: center; /*Horizontal*/
+  align-items: center; /*Vertical*/
+}
+
+.info-card-fade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.info-card-image {
+  max-height: 294px;
+  max-width: 441px;
+}
+
+.info-card-visible {
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 .navbar {
-  margin-top: -10px !important;
-  margin-bottom: 10px !important;
+  margin-top: -20px !important;
+  margin-bottom: 20px !important;
   box-sizing: border-box;
   min-width: 100%;
+}
+
+.navbar-img {
+  border-radius: 20px 20px 20px 20px !important;
+  margin: 2% 2%;
+  border: groove 3px #dfe372;
 }
 
 .navbar-expand {
@@ -119,7 +162,7 @@ body {
 }
 
 .light-bg {
-  background-color: #feffd7 !important;
+  background-color: #e4df72 !important;
 }
 
 .align-items-center {
@@ -144,11 +187,26 @@ body {
   place-content: center;
 }
 
+.push-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.push-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .form {
-  background-color: #beffce;
-  border-radius: 1rem;
   color: #000000;
   padding: 2%;
+  background-color: #dfe372;
+  border-radius: 1rem;
+  border: 6px groove rgb(135, 105, 69);
 }
 
 .result {
